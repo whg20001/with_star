@@ -1,0 +1,7 @@
+{
+  "name": "康复百科 (Serene Steps)",
+  "description": "一个为特殊需要家庭设计的专业康复百科与心理支持平台，提供课程、志愿者服务、资源地图及心理自评工具。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

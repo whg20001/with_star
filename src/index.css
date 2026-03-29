@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #006a63;
+  --color-on-primary: #ffffff;
+  --color-secondary: #6d4ea2;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #8b3d9b;
+  --color-on-tertiary: #ffffff;
+  
+  --color-background: #f8fafa;
+  --color-surface: #f8fafa;
+  --color-on-surface: #191c1c;
+  --color-on-surface-variant: #3f4948;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #f2f4f4;
+  --color-surface-container: #eceeee;
+  --color-surface-high: #e6e8e8;
+  --color-surface-highest: #e1e3e3;
+  
+  --color-primary-container: #68cec4;
+  --color-on-primary-container: #005751;
+  --color-secondary-container: #c5a3ff;
+  --color-on-secondary-container: #533487;
+  --color-tertiary-container: #f39fff;
+  --color-on-tertiary-container: #772a87;
+
+  --color-outline: #6f7977;
+  --color-outline-variant: #bec9c7;
+  
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans;
+  }
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-xl;
+}
+
+.asymmetric-shape {
+  border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
